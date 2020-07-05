@@ -18,16 +18,21 @@ class MyWindow(QMainWindow, form_class):
         self.btn_Translation.clicked.connect(self.Trans_)
 
     def Trans_(self):
+
         #comboBox 선택
         if self.Original_language.currentIndex() == 0:
             lang_src = 'en'
         elif self.Original_language.currentIndex() == 1:
+            lang_src = 'ja'
+        elif self.Original_language.currentIndex() == 2:
             lang_src = 'ko'
 
         if self.Trans_language.currentIndex() == 0:
             lang_dest = 'ko'
         elif self.Trans_language.currentIndex() == 1:
             lang_dest = 'en'
+        elif self.Trans_language.currentIndex() == 2:
+            lang_dest = 'ja'
 
         #번역기능
         original = self.Original_Box.toPlainText()
