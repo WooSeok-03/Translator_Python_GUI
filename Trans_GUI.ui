@@ -6,44 +6,68 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>400</width>
     <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>400</width>
     <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
+    <width>400</width>
     <height>600</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PyTranslator</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>C:/Users/user/Desktop/trans.png</normaloff>C:/Users/user/Desktop/trans.png</iconset>
+    <normaloff>trans_icon.png</normaloff>trans_icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="btn_Translation">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>260</y>
-      <width>771</width>
-      <height>41</height>
+      <y>250</y>
+      <width>380</width>
+      <height>70</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>380</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>380</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>배달의민족 도현</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>번 역</string>
+     <string>번역</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="Original_Box">
@@ -51,9 +75,27 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>771</width>
-      <height>201</height>
+      <width>380</width>
+      <height>200</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>380</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>380</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+      <pointsize>20</pointsize>
+     </font>
     </property>
     <property name="cursor" stdset="0">
      <cursorShape>IBeamCursor</cursorShape>
@@ -64,59 +106,71 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>111</width>
-      <height>22</height>
+      <width>120</width>
+      <height>25</height>
      </rect>
     </property>
-    <item>
-     <property name="text">
-      <string>영어</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>일본어</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>한국어</string>
-     </property>
-    </item>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
    </widget>
    <widget class="QComboBox" name="Trans_language">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>320</y>
-      <width>111</width>
-      <height>22</height>
+      <y>340</y>
+      <width>120</width>
+      <height>25</height>
      </rect>
     </property>
-    <item>
-     <property name="text">
-      <string>한국어</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>영어</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>일본어</string>
-     </property>
-    </item>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
    </widget>
    <widget class="QTextBrowser" name="Trans_Box">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
-      <width>771</width>
-      <height>201</height>
+      <y>370</y>
+      <width>380</width>
+      <height>200</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>380</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>380</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+      <pointsize>20</pointsize>
+     </font>
     </property>
    </widget>
   </widget>
