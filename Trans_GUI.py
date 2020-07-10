@@ -1,5 +1,6 @@
 import sys
-from googletrans import Translator, LANGCODES
+from googletrans import Translator
+from LANGUAGE import LANG
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
@@ -15,7 +16,7 @@ class MyWindow(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        for key in LANGCODES.keys():
+        for key in sorted(LANG.keys()):
             self.Original_language.addItem(key)
             self.Trans_language.addItem(key)
 
@@ -26,14 +27,14 @@ class MyWindow(QMainWindow, form_class):
     def Trans_Buttom(self):
 
         #comboBox 선택
-        for i in LANGCODES.keys():
+        for i in sorted(LANG.keys()):
             if self.Original_language.currentText() == i:
-                lang_src = LANGCODES[i]
+                lang_src = LANG[i]
                 break
 
-        for i in LANGCODES.keys():
+        for i in sorted(LANG.keys()):
             if self.Trans_language.currentText() == i:
-                lang_dest = LANGCODES[i]
+                lang_dest = LANG[i]
                 break
 
         #번역기능
