@@ -1,17 +1,18 @@
 Translator_Python_GUI
-=====================
+=
 Python_PYQT5와 GoogleTrans_API를 이용한 번역기GUI
-------------------------------------------------
+-
 
-[언어]
+__[✏언어]__
 - Python
 
-[컴파일러]
+__[🎬개발 환경]__
 - Pycharm
 
-[라이브러리]
+__[📚라이브러리]__
 - PyQT5
 - PyQT5-tools (PyQT5 Designer)
 
-[API]
+__[☁API]__
 - googletrans
+
